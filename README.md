@@ -1,55 +1,40 @@
-PDF Text Extractor
+# PDF Text Extractor
 A Node.js tool to extract text from PDF files and export transaction data to an Excel spreadsheet.
 
-Features
-Extracts text content from PDF files
+## Features
+* Extracts text content from PDF files
+* Parses transaction data using regular expressions
+* Exports parsed data to an Excel file (XLSX format)
+* Handles multi-page PDF documents
+* Logs extracted data to console
 
-Parses transaction data using regular expressions
-
-Exports parsed data to an Excel file (XLSX format)
-
-Handles multi-page PDF documents
-
-Logs extracted data to console
-
-Installation
+# Installation
 Clone this repository or download the source files
 
-Install dependencies using npm:
+# Install dependencies using npm:
 
-bash
-Copy
-npm install
-Dependencies
-pdfjs-dist ^2.16.105 - PDF parsing library
+# bash
+ npm install
+# Dependencies
+* pdfjs-dist ^2.16.105 - PDF parsing library
+* exceljs ^4.4.0 - Excel file generation
 
-exceljs ^4.4.0 - Excel file generation
+# Usage
+* Place your PDF file in the project directory (default filename: file.pdf)
 
-Usage
-Place your PDF file in the project directory (default filename: file.pdf)
-
-Run the script:
-
-bash
-Copy
-npm start
-or
-
-bash
-Copy
+# Run the script:
+ npm start
 node index.js
+
 The script will:
 
-Parse the PDF file
+* Parse the PDF file
+* Extract transaction data matching the pattern: Date Description Amount Balance Type
+* Create an Excel file named parsed_transactions.xlsx with the extracted data
+* Log the extracted entries to the console
 
-Extract transaction data matching the pattern: Date Description Amount Balance Type
-
-Create an Excel file named parsed_transactions.xlsx with the extracted data
-
-Log the extracted entries to the console
-
-Configuration
-You can modify the following constants in index.js:
+# Configuration
+*You can modify the following constants in index.js:
 
 PDF_FILE_PATH: Path to the input PDF file
 
