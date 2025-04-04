@@ -30,8 +30,8 @@ npm install'''
 * Place your PDF file in the project directory (default filename: file.pdf)
 
 # Run the script:
- '''npm start
-node index.js'''
+ npm start
+node index.js
 
 The script will:
 
@@ -52,13 +52,8 @@ The Excel file will contain the following columns:
 |Date| Description | Amount | Balance after transaction | Type |
 |-|-|-|-|-|
 |01-APR-2022 | B/F 30 | 30 | 63 | 234.64DRr.
+|04-Apr-2022 |  BY 06971000010040 | 25,000 | 30 | 234.66Dr
 
-
-Copy
-'''01-APR-2022 B/F 30,63,234.66Dr
-04-Apr-2022 T BY 06971000010040 25,000.00 30,38,234.66Dr
-04-Apr-2022 C By Cash 40,000.00 29,98,234.66Dr
-...
 
 # Notes
 * The script is currently configured to parse bank statement PDFs with a specific format
