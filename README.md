@@ -49,18 +49,10 @@ The script will:
 # Output Format
 The Excel file will contain the following columns:
 
-'''Date: Transaction date (format: DD-MMM-YYYY)
+|Date| Description | Amount | Balance after transaction | Type |
+|-|-|-|-|-|
+|01-APR-2022 | B/F 30 | 30 | 63 | 234.64DRr.
 
-Description: Transaction description
-
-Amount: Transaction amount
-
-Balance: Account balance after transaction
-
-Type: Transaction type (Dr/Cr)'''
-
-Example
-For the provided bank statement PDF, the script will extract transactions like:
 
 Copy
 '''01-APR-2022 B/F 30,63,234.66Dr
